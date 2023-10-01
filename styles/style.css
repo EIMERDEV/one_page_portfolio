@@ -9,22 +9,37 @@
          /* Если браузер не поддерживает woff2, загрузит woff */
          url("/fonts/roboto.woff") format("woff");
   }
+html{
+    height: 1000px;
+}
+main{
+    height: 1080px;
 
+}
 body{
     background: url(/public/images/background.png) no-repeat;
     background-size: 1920px 1080px;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    height: 1080px;
+    text-align: center;
+}
+.persone{
+    height: 1080px;
+    margin-top: -220px;
+
 }
 .persone_img{
+    position: relative;
+    top: 250px;
+    padding-right: 1000px;
     background: url("/public/images/ellipse-4.svg")no-repeat 30px;
     background-position: 100px 10px 10px 10px;
 }
 .arrow{
     position: relative;
-    bottom: 300px;
-    right: 650px;
+    right: 600px;
     width: 357px;
     height: 158px;
     flex-shrink: 0;
@@ -32,8 +47,8 @@ body{
 }
 .arrow_h1{
     position: relative;
-    bottom: 450px;
-    left: 120px;
+    bottom: 150px;
+    right: 600px;
     color: var(--neutral-2, #F7F7F7);
     font-family: Roboto;
     font-size: 24px;
@@ -43,8 +58,8 @@ body{
 }
 .arrow_p1{
     position: relative;
-    bottom: 465px;
-    left: 116px;
+    bottom: 150px;
+    right: 600px;
     color: var(--neutral-4, #D9D9D9);
     font-family: Roboto;
     font-size: 15px;
@@ -52,10 +67,12 @@ body{
     font-weight: 400;
     line-height: 140%; /* 21px */
 }
-.gold{
+.zagi{
     position: relative;
-    bottom: 900px;
-    left: 650px;
+    margin-top: -800px;
+}
+.gold{
+    padding-left: 100px;
     color: #CEB691;
     font-family: Roboto;
     font-size: 27px;
@@ -64,20 +81,17 @@ body{
     line-height: 85%; /* 22.95px */
 }
 .voronki{
-    position: relative;
-    bottom: 910px;
-    left: 645px;
+    padding-left: 100px;
     color: var(--neutral-2, #F7F7F7);
-font-family: Roboto;
-font-size: 42px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%; /* 54.6px */
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 54.6px */
 }
 .under_voronki{
     position: relative;
-    bottom: 910px;
-    left: 645px;
+    padding-left: 100px;
     color: var(--neutral-3, #EBEBEB);
     font-family: Roboto;
     font-size: 17px;
@@ -87,8 +101,8 @@ line-height: 130%; /* 54.6px */
 }
 .get{
     position: relative;
-    bottom: 910px;
-    left: 645px;
+    margin-top: 80px;
+    left: 700px;
     display: flex;
     width: 211px;
     height: 57px;
@@ -115,8 +129,9 @@ line-height: 130%; /* 54.6px */
 }
 .get_info{
     position: relative;
-    bottom: 970px;
-    left: 880px;
+    width: 300px;
+    left: 920px;
+    bottom: 60px;
     color: var(--neutral-5, #BFBFBF);
     font-family: Roboto;
     font-size: 15px;
@@ -126,27 +141,25 @@ line-height: 130%; /* 54.6px */
 }
 .elipse1{
     position: relative;
-    bottom: 1350px;
-    left: 590px;
+    bottom: 500px;
     width: 370px;
     height: 62.23px;
     flex-shrink: 0;
 }
 .elipse2{
     position: relative;
-    bottom: 1295px;
-    left: 315px;
+    bottom: 450px;
+    right: 270px;
     width: 150px;
 }
 .elipse3{
     position: relative;
-    bottom: 1246px;
-    left: 160px;
+    bottom: 410px;
+    right: 260px;
     width:50px;
 }
 .vector{
     position: relative;
-    bottom: 760px;
     left: 650px;
     margin-right: 60px;
 }
@@ -155,7 +168,7 @@ line-height: 130%; /* 54.6px */
 }
 .link1{
     position: relative;
-    bottom: 765px;
+    bottom: 5px;
     left: 620px;
     color: var(--neutral-2, #F7F7F7);
     font-family: Roboto;
@@ -167,7 +180,7 @@ line-height: 130%; /* 54.6px */
 }
 .link2{
     position: relative;
-    bottom: 765px;
+    bottom: 5px;
     left: 620px;
     color: var(--neutral-2, #F7F7F7);
     font-family: Roboto;
@@ -179,7 +192,7 @@ line-height: 130%; /* 54.6px */
 }
 .link3{
     position: relative;
-    bottom: 765px;
+    bottom: 5px;
     left: 620px;
     color: var(--neutral-2, #F7F7F7);
     font-family: Roboto;
@@ -189,6 +202,9 @@ line-height: 130%; /* 54.6px */
     line-height: 135%; /* 20.25px */
     text-decoration: none;
 }
-.zagi{
-
+.footer{
+    position: relative;
+    top: 100px;
+    right:685px;
+    margin-top: -0px;
 }
